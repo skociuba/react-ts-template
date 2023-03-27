@@ -1,0 +1,31 @@
+{
+  "browsers": ["chrome"],
+  "screenshots": {
+    "path": "./tests/e2e/screenshots",
+    "fullPage": false,
+    "pathPattern": "${USERAGENT}/${TEST_INDEX}/${FILE_INDEX}.png"
+  },
+  "src": ["./tests/e2e/scenarios/test.feature", "./tests/e2e/steps/test.js"],
+  "selectorTimeout": 20000,
+  "assertionTimeout": 20000,
+  "pageLoadTimeout": 20000,
+  "pageRequestTimeout": 40000,
+  "ajaxRequestTimeout": 40000,
+  "browserInitTimeout": 3600000,
+  "color": true,
+  "hostname": "127.0.0.1",
+  "quarantineMode": true,
+  "debugMode": false,
+  "debugOnFail": false,
+  "stopOnFirstFail": false,
+  "skipJsErrors": true,
+  "skipUncaughtErrors": true,
+  "speed": 0.1,
+  "port1": 8000,
+  "port2": 8001,
+  "disablePageCaching": true,
+  "developmentMode": true,
+  "disableScreenshots": false,
+  "retryTestPages": true,
+  "proxyBypass": ["127.0.0.1"]
+}

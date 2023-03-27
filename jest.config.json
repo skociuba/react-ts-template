@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "setupFileAfterEnv": ["./src/setupTests.js"],
+  "modulePaths": ["src"],
+  "moduleNameMapper": {
+    "^shared/(.*)$": "<rootDir>/src/shared/$1",
+    "^components/(.*)$": "<rootDir>/src/components/$1",
+    "^errors/(.*)$": "<rootDir>/src/errors/$1",
+    "^pages/(.*)$": "<rootDir>/src/pages/$1",
+    "^utils/(.*)$": "<rootDir>/src/utils/$1",
+    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|svg|woff|woff2|pdf)$": "identity-obj-proxy"
+  },
+  "snapshotSerializers": ["@emotion/jest/serializer"]
+}

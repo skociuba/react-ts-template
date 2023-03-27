@@ -1,0 +1,7 @@
+{
+  "translations": {
+"hello guest":"hello guest nr: {{number}}",
+"Today is":"Today is: ",
+" so it mean we got New Year":" so it mean we got New Year"
+  }
+}

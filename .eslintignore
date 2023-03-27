@@ -1,0 +1,4 @@
+node_modules/**
+build/**
+setup_redux_saga/**
+src/**/*.style.js

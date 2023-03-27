@@ -1,0 +1,33 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+dist/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# enviroment
+.env
+
+# misc
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
+.vscode
+.DS_Store
+sonatypeiq
+.eslintcache
+tests/e2e/reports
+tests/e2e/screenshots
+package-lock.json
+mock-server/package-lock.json
+

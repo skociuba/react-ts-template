@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="27" failures="4" errors="0" time="43.511">
+  <testsuite name="&lt;Test/&gt;" errors="0" failures="4" skipped="0" timestamp="2022-12-21T16:28:17" time="12.74" tests="5">
+    <testcase classname="&lt;Test/&gt; render without crashing" name="&lt;Test/&gt; render without crashing" time="0.291">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `&lt;Test/&gt; render without crashing 1`
+
+- Snapshot  - 63
++ Received  +  0
+
+@@ -8,34 +8,10 @@
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+- .emotion-1 li:first-child div&gt;div:first-child div:nth-child(1) {
+-   color: red;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:first-child div:last-child {
+-   color: blue;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:nth-child(2) {
+-   color: yellow;
+- }
+-
+- .emotion-1 li:not(:first-child) div&gt;div:first-child {
+-   color: pink;
+- }
+-
+- .emotion-1 li:not(:first-child) div:not(:first-child):nth-child(3) {
+-   color: orange;
+- }
+-
+- .emotion-1 li:not(:first-child) div:nth-child(4) {
+-   color: purple;
+- }
+-
+  &lt;div
+    class=&quot;emotion-0&quot;
+  &gt;
+    &lt;section
+      data-testid=&quot;test-container&quot;
+@@ -97,46 +73,7 @@
+      &lt;span
+        data-testid=&quot;fallbackIndicator&quot;
+      &gt;
+        -
+      &lt;/span&gt;
+-     &lt;ul
+-       class=&quot;emotion-1&quot;
+-     &gt;
+-       &lt;div&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-               &lt;div&gt;
+-                 guys
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               additional div
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               girls
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               and
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               boys
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-       &lt;/div&gt;
+-     &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+    at Object.&lt;anonymous&gt; (D:\ReactTemplate2021\template\src\pages\Test\Test.test.js:26:34)
+    at Promise.then.completed (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:216:10)
+    at _callCircusTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:212:40)
+    at _runTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:149:3)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:63:9)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:57:9)
+    at run (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:176:21)
+    at jestAdapter (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:109:19)
+    at runTestInternal (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:380:16)
+    at runTest (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:472:34)</failure>
+    </testcase>
+    <testcase classname="&lt;Test/&gt; render without crashing with testLoadingSelector" name="&lt;Test/&gt; render without crashing with testLoadingSelector" time="0.031">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `&lt;Test/&gt; render without crashing with testLoadingSelector 1`
+
+- Snapshot  - 63
++ Received  +  0
+
+@@ -8,34 +8,10 @@
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+- .emotion-1 li:first-child div&gt;div:first-child div:nth-child(1) {
+-   color: red;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:first-child div:last-child {
+-   color: blue;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:nth-child(2) {
+-   color: yellow;
+- }
+-
+- .emotion-1 li:not(:first-child) div&gt;div:first-child {
+-   color: pink;
+- }
+-
+- .emotion-1 li:not(:first-child) div:not(:first-child):nth-child(3) {
+-   color: orange;
+- }
+-
+- .emotion-1 li:not(:first-child) div:nth-child(4) {
+-   color: purple;
+- }
+-
+  &lt;div
+    class=&quot;emotion-0&quot;
+  &gt;
+    &lt;section
+      data-testid=&quot;test-container&quot;
+@@ -97,46 +73,7 @@
+      &lt;span
+        data-testid=&quot;fallbackIndicator&quot;
+      &gt;
+        -
+      &lt;/span&gt;
+-     &lt;ul
+-       class=&quot;emotion-1&quot;
+-     &gt;
+-       &lt;div&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-               &lt;div&gt;
+-                 guys
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               additional div
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               girls
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               and
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               boys
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-       &lt;/div&gt;
+-     &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+    at Object.&lt;anonymous&gt; (D:\ReactTemplate2021\template\src\pages\Test\Test.test.js:38:34)
+    at Promise.then.completed (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:216:10)
+    at _callCircusTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:212:40)
+    at _runTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:149:3)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:63:9)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:57:9)
+    at run (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:176:21)
+    at jestAdapter (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:109:19)
+    at runTestInternal (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:380:16)
+    at runTest (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:472:34)</failure>
+    </testcase>
+    <testcase classname="&lt;Test/&gt; render without crashing with testExampleSelector" name="&lt;Test/&gt; render without crashing with testExampleSelector" time="0.036">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `&lt;Test/&gt; render without crashing with testExampleSelector 1`
+
+- Snapshot  - 63
++ Received  +  0
+
+@@ -8,34 +8,10 @@
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+- .emotion-1 li:first-child div&gt;div:first-child div:nth-child(1) {
+-   color: red;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:first-child div:last-child {
+-   color: blue;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:nth-child(2) {
+-   color: yellow;
+- }
+-
+- .emotion-1 li:not(:first-child) div&gt;div:first-child {
+-   color: pink;
+- }
+-
+- .emotion-1 li:not(:first-child) div:not(:first-child):nth-child(3) {
+-   color: orange;
+- }
+-
+- .emotion-1 li:not(:first-child) div:nth-child(4) {
+-   color: purple;
+- }
+-
+  &lt;div
+    class=&quot;emotion-0&quot;
+  &gt;
+    &lt;section
+      data-testid=&quot;test-container&quot;
+@@ -97,46 +73,7 @@
+      &lt;span
+        data-testid=&quot;fallbackIndicator&quot;
+      &gt;
+        -
+      &lt;/span&gt;
+-     &lt;ul
+-       class=&quot;emotion-1&quot;
+-     &gt;
+-       &lt;div&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-               &lt;div&gt;
+-                 guys
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               additional div
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               girls
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               and
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               boys
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-       &lt;/div&gt;
+-     &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+    at Object.&lt;anonymous&gt; (D:\ReactTemplate2021\template\src\pages\Test\Test.test.js:50:34)
+    at Promise.then.completed (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:216:10)
+    at _callCircusTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:212:40)
+    at _runTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:149:3)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:63:9)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:57:9)
+    at run (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:176:21)
+    at jestAdapter (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:109:19)
+    at runTestInternal (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:380:16)
+    at runTest (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:472:34)</failure>
+    </testcase>
+    <testcase classname="&lt;Test/&gt; render without crashing with testDataSelector" name="&lt;Test/&gt; render without crashing with testDataSelector" time="0.031">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `&lt;Test/&gt; render without crashing with testDataSelector 1`
+
+- Snapshot  - 63
++ Received  +  0
+
+@@ -8,34 +8,10 @@
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+- .emotion-1 li:first-child div&gt;div:first-child div:nth-child(1) {
+-   color: red;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:first-child div:last-child {
+-   color: blue;
+- }
+-
+- .emotion-1 li:first-child div&gt;div:nth-child(2) {
+-   color: yellow;
+- }
+-
+- .emotion-1 li:not(:first-child) div&gt;div:first-child {
+-   color: pink;
+- }
+-
+- .emotion-1 li:not(:first-child) div:not(:first-child):nth-child(3) {
+-   color: orange;
+- }
+-
+- .emotion-1 li:not(:first-child) div:nth-child(4) {
+-   color: purple;
+- }
+-
+  &lt;div
+    class=&quot;emotion-0&quot;
+  &gt;
+    &lt;section
+      data-testid=&quot;test-container&quot;
+@@ -97,46 +73,7 @@
+      &lt;span
+        data-testid=&quot;fallbackIndicator&quot;
+      &gt;
+        -
+      &lt;/span&gt;
+-     &lt;ul
+-       class=&quot;emotion-1&quot;
+-     &gt;
+-       &lt;div&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-               &lt;div&gt;
+-                 guys
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               additional div
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-         &lt;li&gt;
+-           &lt;div&gt;
+-             &lt;div&gt;
+-               &lt;div&gt;
+-                 hello
+-               &lt;/div&gt;
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               girls
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               and
+-             &lt;/div&gt;
+-             &lt;div&gt;
+-               boys
+-             &lt;/div&gt;
+-           &lt;/div&gt;
+-         &lt;/li&gt;
+-       &lt;/div&gt;
+-     &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+    at Object.&lt;anonymous&gt; (D:\ReactTemplate2021\template\src\pages\Test\Test.test.js:62:34)
+    at Promise.then.completed (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\ReactTemplate2021\template\node_modules\jest-circus\build\utils.js:216:10)
+    at _callCircusTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:212:40)
+    at _runTest (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:149:3)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:63:9)
+    at _runTestsForDescribeBlock (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:57:9)
+    at run (D:\ReactTemplate2021\template\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:176:21)
+    at jestAdapter (D:\ReactTemplate2021\template\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:109:19)
+    at runTestInternal (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:380:16)
+    at runTest (D:\ReactTemplate2021\template\node_modules\jest-runner\build\runTest.js:472:34)</failure>
+    </testcase>
+    <testcase classname="&lt;Test/&gt; handle fetch fetchTestData" name="&lt;Test/&gt; handle fetch fetchTestData" time="0.035">
+    </testcase>
+  </testsuite>
+  <testsuite name="getLinkWithParameter()" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:30" time="1.87" tests="3">
+    <testcase classname="getLinkWithParameter() customer channel renders link" name="getLinkWithParameter() customer channel renders link" time="0.009">
+    </testcase>
+    <testcase classname="getLinkWithParameter() staff channel renders link" name="getLinkWithParameter() staff channel renders link" time="0.002">
+    </testcase>
+    <testcase classname="encodeQueryData() encode data" name="encodeQueryData() encode data" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test - response mappers" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:32" time="1.565" tests="1">
+    <testcase classname="Test - response mappers return correct test data" name="Test - response mappers return correct test data" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test reducers" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:34" time="1.479" tests="3">
+    <testcase classname="Test reducers Test reducers returns loading state " name="Test reducers Test reducers returns loading state " time="0">
+    </testcase>
+    <testcase classname="Test reducers Test reducers returns success state " name="Test reducers Test reducers returns success state " time="0">
+    </testcase>
+    <testcase classname="Test reducers Test reducers returns error state " name="Test reducers Test reducers returns error state " time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test - selectors" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:35" time="1.883" tests="2">
+    <testcase classname="Test - selectors return test data" name="Test - selectors return test data" time="0.004">
+    </testcase>
+    <testcase classname="Test - selectors return test loading" name="Test - selectors return test loading" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="getFormattedDater()" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:37" time="1.499" tests="2">
+    <testcase classname="getFormattedDater() render right data" name="getFormattedDater() render right data" time="0.086">
+    </testcase>
+    <testcase classname="getSubtractedDays() render right data" name="getSubtractedDays() render right data" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="application - selectors" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:39" time="1.771" tests="2">
+    <testcase classname="application - selectors return application" name="application - selectors return application" time="0.001">
+    </testcase>
+    <testcase classname="application - selectors return params" name="application - selectors return params" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Application /&gt;" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:40" time="1.982" tests="1">
+    <testcase classname="&lt;Application /&gt; render without crashing" name="&lt;Application /&gt; render without crashing" time="0.101">
+    </testcase>
+  </testsuite>
+  <testsuite name="getOrdinalTextSuffix()" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:43" time="2.892" tests="1">
+    <testcase classname="getOrdinalTextSuffix() encode data" name="getOrdinalTextSuffix() encode data" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;RouteNotFound/&gt;" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:46" time="1.537" tests="1">
+    <testcase classname="&lt;RouteNotFound/&gt; render without crashing" name="&lt;RouteNotFound/&gt; render without crashing" time="0.049">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;RequireParam/&gt;" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:47" time="1.718" tests="1">
+    <testcase classname="&lt;RequireParam/&gt; render without crashing" name="&lt;RequireParam/&gt; render without crashing" time="0.051">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;RequireSearchParam/&gt;" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:49" time="1.497" tests="1">
+    <testcase classname="&lt;RequireSearchParam/&gt; render without crashing" name="&lt;RequireSearchParam/&gt; render without crashing" time="0.047">
+    </testcase>
+  </testsuite>
+  <testsuite name="getMapping" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:51" time="1.85" tests="2">
+    <testcase classname="getMapping expect to mapping correctly" name="getMapping expect to mapping correctly" time="0.015">
+    </testcase>
+    <testcase classname="getMapping expect to mapping correctly" name="getMapping expect to mapping correctly" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Application reducers" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:53" time="1.353" tests="1">
+    <testcase classname="Application reducers config reducers returns config state " name="Application reducers config reducers returns config state " time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test - transport" errors="0" failures="0" skipped="0" timestamp="2022-12-21T16:28:54" time="1.413" tests="1">
+    <testcase classname="Test - transport return getTestData" name="Test - transport return getTestData" time="0.116">
+    </testcase>
+  </testsuite>
+</testsuites>

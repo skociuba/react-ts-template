@@ -11,6 +11,7 @@ const RequireParam = ({children, isLocationStateRequire, redirectTo}) => {
   }
 
   try {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const {id} = useParams();
     const hasStoredParam = !!(
       getParsedChildItemFromStorage(localStorage, LOCATION_STATE_KEY, id) ||

@@ -1,14 +1,21 @@
 {
-  "parser": "babel-eslint",
-  "plugins": ["react", "prettier", "import", "react-hooks"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "prettier", "import", "@typescript-eslint"],
   
-    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended","plugin:react/jsx-runtime","plugin:react-hooks/recommended"],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended","plugin:react/jsx-runtime","plugin:react-hooks/recommended","plugin:react-hooks/recommended"],
     "parserOptions": {
       "ecmaVersion": 8,
       "sourceType": "module"
     },
 
   "rules": {
+    "@typescript-eslint/naming-convention":[
+"error",
+{
+  "selector":"function",
+  "format":["PascalCase","camelCase"]
+}
+    ],
     "arrow-body-style":["warn","as-needed"],
     "accessor-pairs": "off",
     "brace-style": ["error", "1tbs"],

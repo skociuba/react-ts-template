@@ -1,6 +1,7 @@
-import React, {forwardRef} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
+import {Props} from './model';
 export const isValid = (value) => !!value || value === 0 || value === '0';
 
 export const isChildrenValid = (children) => {
@@ -8,15 +9,18 @@ export const isChildrenValid = (children) => {
   return isValid(child);
 };
 
-const FallbackIndicator = forwardRef(({children, fallback, condition, testId, className}, ref) => {
-  const shouldChildrenBeRendered =
-    typeof condition === 'boolean' ? condition : isChildrenValid(children);
-  return (
-    <span ref={ref} className={className} data-testId={testId}>
-      {shouldChildrenBeRendered ? children : fallback}
-    </span>
-  );
-});
+const FallbackIndicator = React.forwardRef<HTMLButtonElement, Props>(
+  ({children, fallback, condition, testId, className}, ref) => {
+    const shouldChildrenBeRendered =
+      typeof condition === 'boolean' ? condition : isChildrenValid(children);
+
+    return (
+      <span ref={ref} className={className} data-testId={testId}>
+        {shouldChildrenBeRendered ? children : fallback}
+      </span>
+    );
+  },
+);
 
 FallbackIndicator.defaultProps = {
   fallback: '-',
@@ -24,7 +28,7 @@ FallbackIndicator.defaultProps = {
 };
 
 FallbackIndicator.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.string,
   fallback: PropTypes.any,
   condition: PropTypes.bool,
   testId: PropTypes.string,

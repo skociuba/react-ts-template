@@ -46,13 +46,14 @@ const state2 = {
     },
   },
 };
+
 jest.mock('react-redux');
 
 describe('Test component', () => {
   const mockDispatch = jest.fn();
 
   beforeEach(() => {
-    useDispatch.mockReturnValue(mockDispatch);
+    (useDispatch as jest.Mock).mockReturnValue(mockDispatch);
   });
 
   afterEach(() => {
@@ -60,7 +61,9 @@ describe('Test component', () => {
   });
 
   it('displays loading skeleton when testLoadingExample is true', () => {
-    useSelector.mockImplementation((selector) => selector(state));
+    (useSelector as jest.Mock).mockImplementation((selector: (arg0: any) => any) =>
+      selector(state),
+    );
     enhancedRenderer(<Test />);
     expect(screen.getByText('Loading...')).toBeInTheDocument();
   });
@@ -72,7 +75,9 @@ describe('Test component', () => {
   });
 
   it('displays test data when testData is not null', async () => {
-    useSelector.mockImplementation((selector) => selector(state2));
+    (useSelector as jest.Mock).mockImplementation((selector: (arg0: any) => any) =>
+      selector(state2),
+    );
     enhancedRenderer(<Test />);
     expect(mockDispatch).toHaveBeenCalledTimes(1);
     await waitFor(async () => {

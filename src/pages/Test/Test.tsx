@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 
 import {ErrorMessage} from '../../components/Modules/ErrorMessage/index';
+import {FallbackIndicator} from '../../components/Packages/FallbackIndicator/index';
 
 import {fetchTestData} from './actions';
 import {testDataSelector, testLoadingSelector, errorSelector} from './selectors';
@@ -27,7 +28,14 @@ const Test: React.FC = () => {
       {testData?.length > 0 &&
         testData.map((user) => (
           <div key={user._id}>
-            <p>{user.name}</p>
+            <FallbackIndicator
+              fallback={'---'}
+              condition={!!user.name}
+              testId={'test-id'}
+              className={''}
+              forwardRef={''}>
+              {user.name}
+            </FallbackIndicator>
             <p>{user.trips}</p>
             {user?.airline?.map((item) => (
               <p key={item.id}>
